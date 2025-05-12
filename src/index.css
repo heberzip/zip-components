@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: "Nunito", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+
+  /* Base Colors */
+  --color-dark: #5e5e5e;
+  --color-light: #f4f6f9;
+
+  /* Primary Yellow (ZIP Yellow) */
+  --color-zip-yellow-500: #fbbf10;
+  --color-zip-yellow-400: #ffd94d;
+  --color-zip-yellow-300: #ffe680;
+  --color-zip-yellow-200: #fff2b3;
+  --color-zip-yellow-100: #fff9e0;
+  --color-zip-yellow-50: #fffcf5;
+
+  /* Secondary Blue (ZIP Blue 2) */
+  --color-zip-blue2-900: #0e2f36;
+  --color-zip-blue2-800: #133f48;
+  --color-zip-blue2-700: #1c5e6c;
+  --color-zip-blue2-600: #267e90;
+  --color-zip-blue2-500: #309eb5;
+  --color-zip-blue2-400: #59b1c3;
+  --color-zip-blue2-300: #82c4d2;
+  --color-zip-blue2-200: #acd8e1;
+  --color-zip-blue2-100: #d5ebf0;
+  --color-zip-blue2-50: #eaf5f7;
+
+  /* Third Blue (ZIP Blue 1) */
+  --color-zip-blue1-500: #78daea;
+}
