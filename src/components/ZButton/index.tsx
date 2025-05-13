@@ -1,7 +1,16 @@
-export const ZButton = () => {
+import { cn } from "../../utils/helpers";
+import { buttonVariants, type ZButtonProps } from "./index.variance";
+
+export const ZButton = ({
+  variant,
+  size,
+  className,
+  ...props
+}: ZButtonProps) => {
   return (
-    <button className="bg-zip-blue2-600 text-white rounded-full px-4 py-2 font-bold">
-      <span>Z</span>
-    </button>
+    <button
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
   );
 };
