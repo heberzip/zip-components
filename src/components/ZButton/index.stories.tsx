@@ -17,9 +17,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    children: "Primary",
+    children: "PRIMARY",
     variant: "primary",
-    size: "lg",
+    size: "default",
+    style: "plain",
     onClick: action("button primary clicked"),
   },
   parameters: {
@@ -29,7 +30,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    children: "Secondary",
+    children: "SECONDARY",
     variant: "secondary",
     onClick: action("button secondary clicked"),
   },
@@ -40,7 +41,7 @@ export const Secondary: Story = {
 
 export const Destructive: Story = {
   args: {
-    children: "Destructive",
+    children: "DESTRUCTIVE",
     variant: "destructive",
     onClick: action("btn destructive clicked"),
   },
@@ -51,9 +52,22 @@ export const Destructive: Story = {
 
 export const Styled: Story = {
   args: {
-    children: "Styled",
-    variant: "styled",
+    children: "STYLED",
+    variant: "primary",
+    style: "decorated",
     onClick: action("btn styled clicked"),
+  },
+  parameters: {
+    layout: "centered",
+  },
+};
+
+export const Decorated: Story = {
+  args: {
+    children: "DECORATED",
+    variant: "secondary",
+    style: "decorated",
+    onClick: action("btn decorated clicked"),
   },
   parameters: {
     layout: "centered",
@@ -62,7 +76,7 @@ export const Styled: Story = {
 
 export const Outline: Story = {
   args: {
-    children: "Outline",
+    children: "OUTLINE",
     variant: "outline",
     onClick: action("btn outline clicked"),
   },
@@ -73,7 +87,7 @@ export const Outline: Story = {
 
 export const Ghost: Story = {
   args: {
-    children: "Ghost",
+    children: "GHOST",
     variant: "ghost",
     onClick: action("btn ghost clicked"),
   },
@@ -84,8 +98,7 @@ export const Ghost: Story = {
 
 export const Rounded: Story = {
   args: {
-    children: "Rounded",
-    variant: "rounded",
+    children: "ROUNDED",
     onClick: action("btn rounded clicked"),
   },
   parameters: {
@@ -95,7 +108,7 @@ export const Rounded: Story = {
 
 export const Link: Story = {
   args: {
-    children: <a href="#">Link</a>,
+    children: <a href="#">LINK</a>,
     variant: "link",
     onClick: action("btn link clicked"),
   },

@@ -6,29 +6,107 @@
   --font-heading: "Montserrat", sans-serif;
 
   /* Base Colors */
-  --color-dark: #5e5e5e;
-  --color-light: #f4f6f9;
+  --color-z-white: #ffffff;
+  --color-z-black: #000000;
 
-  /* Primary Yellow (ZIP Yellow) */
-  --color-zip-yellow-500: #fbbf10;
-  --color-zip-yellow-400: #ffd94d;
-  --color-zip-yellow-300: #ffe680;
-  --color-zip-yellow-200: #fff2b3;
-  --color-zip-yellow-100: #fff9e0;
-  --color-zip-yellow-50: #fffcf5;
+  /* Primary z-yellow */
+  --color-z-yellow: #fbbf10;
 
-  /* Secondary Blue (ZIP Blue 2) */
-  --color-zip-blue2-900: #0e2f36;
-  --color-zip-blue2-800: #133f48;
-  --color-zip-blue2-700: #1c5e6c;
-  --color-zip-blue2-600: #267e90;
-  --color-zip-blue2-500: #309eb5;
-  --color-zip-blue2-400: #59b1c3;
-  --color-zip-blue2-300: #82c4d2;
-  --color-zip-blue2-200: #acd8e1;
-  --color-zip-blue2-100: #d5ebf0;
-  --color-zip-blue2-50: #eaf5f7;
+  /* Degradation z-yellow */
+  --color-z-yellow-900: #322603;
+  --color-z-yellow-800: #644c06;
+  --color-z-yellow-700: #967209;
+  --color-z-yellow-600: #c8980c;
+  --color-z-yellow-500: #fbbf10;
+  --color-z-yellow-400: #fbcb3f;
+  --color-z-yellow-300: #fcd86f;
+  --color-z-yellow-200: #fde59f;
+  --color-z-yellow-100: #fdebb7;
+  --color-z-yellow-50: #fef8e7;
 
-  /* Third Blue (ZIP Blue 1) */
-  --color-zip-blue1-500: #78daea;
+  /* z-orange*/
+  --color-z-orange: #eaa101;
+
+  /* Degradation z-orange */
+  --color-z-orange-900: #463000;
+  --color-z-orange-800: #755000;
+  --color-z-orange-700: #a37000;
+  --color-z-orange-600: #e89e00;
+  --color-z-orange-500: #eaa101;
+  --color-z-orange-400: #ecaa1a;
+  --color-z-orange-300: #f0bd4d;
+  --color-z-orange-200: #f4d080;
+  --color-z-orange-100: #f8e2b2;
+  --color-z-orange-50: #fcf5e5;
+
+  /* Secondary z-blue */
+  --color-z-blue: #309eb5;
+
+  /* Degradation z-blue */
+  --color-z-blue-900: #091f24;
+  --color-z-blue-800: #133f48;
+  --color-z-blue-700: #1c5e6c;
+  --color-z-blue-600: #267e90;
+  --color-z-blue-500: #309eb5;
+  --color-z-blue-400: #59b1c3;
+  --color-z-blue-300: #82c4d2;
+  --color-z-blue-200: #acd8e1;
+  --color-z-blue-100: #d5ebf0;
+  --color-z-blue-50: #eaf5f7;
+
+  /* Third z-lightblue */
+  --color-z-lightblue: #78daea;
+
+  /* Degradation z-lightblue */
+  --color-z-lightblue-900: #0d1b2a;
+  --color-z-lightblue-800: #1e3a59;
+  --color-z-lightblue-700: #3a5a7f;
+  --color-z-lightblue-600: #5a7e9f;
+  --color-z-lightblue-500: #78daea;
+  --color-z-lightblue-400: #93e1ee;
+  --color-z-lightblue-300: #aee8f2;
+  --color-z-lightblue-200: #c9f0f6;
+  --color-z-lightblue-100: #e4f7fa;
+  --color-z-lightblue-50: #f1fbfc;
+
+  /* Forth z-darkblue */
+  --color-z-darkblue: #0087ad;
+
+  /* Deagradation z-darkblue */
+  --color-z-darkblue-900: #002833;
+  --color-z-darkblue-800: #004356;
+  --color-z-darkblue-700: #005e79;
+  --color-z-darkblue-600: #006c8a;
+  --color-z-darkblue-500: #0087ad;
+  --color-z-darkblue-400: #329fbd;
+  --color-z-darkblue-300: #66b7cd;
+  --color-z-darkblue-200: #99cfde;
+  --color-z-darkblue-100: #cce7ee;
+  --color-z-darkblue-50: #e5f3f6;
+}
+
+.linear-gradient-primary {
+  background: linear-gradient(
+    to right,
+    var(--color-z-yellow-500),
+    var(--color-z-orange-500)
+  );
+}
+
+.linear-gradient-primary:hover {
+  background-color: var(--color-z-yellow-500);
+  background-image: none;
+}
+
+.linear-gradient-secondary {
+  background: linear-gradient(
+    to right,
+    var(--color-z-darkblue-500),
+    var(--color-z-lightblue-500)
+  );
+}
+
+.linear-gradient-secondary:hover {
+  background-color: var(--color-z-darkblue-500);
+  background-image: none;
 }
