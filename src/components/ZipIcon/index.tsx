@@ -1,20 +1,27 @@
 import { cn } from "../../utils/helpers";
 import { iconVariants, type ZIconProps } from "./index.variance";
 
-import ZRoundedIcon from "../icons/ZRoundedIcon";
+import ZCircleIcon from "../icons/ZCircleIcon";
 import ZSquareIcon from "../icons/ZSquareIcon";
 
 const ICON_MAP = {
-  round: ZRoundedIcon,
+  circle: ZCircleIcon,
   square: ZSquareIcon,
 };
 
-export const ZipIcon = ({ icon, className, ...props }: ZIconProps) => {
+export const ZipIcon = ({
+  icon,
+  color,
+  size,
+  className,
+  ...props
+}: ZIconProps) => {
   const IconComponent = ICON_MAP[icon!];
   if (!IconComponent) return null;
+
   return (
     <IconComponent
-      className={cn(iconVariants({ icon, className }))}
+      className={cn(iconVariants({ icon, color, size, className }))}
       {...props}
     />
   );

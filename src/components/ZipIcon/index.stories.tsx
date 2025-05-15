@@ -11,20 +11,21 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const IconRoundedYellow: Story = {
+export const IconRoundYellow: Story = {
   args: {
-    icon: "round",
-    className: "text-z-yellow w-40 h-40",
+    icon: "circle",
+    color: "yellow",
+    size: "sm",
   },
   parameters: {
     layout: "centered",
   },
 };
 
-export const IcoBlack: Story = {
+export const IconBlack: Story = {
   args: {
-    icon: "round",
-    className: "text-z-black w-40 h-40",
+    icon: "circle",
+    color: "black",
   },
   parameters: {
     layout: "centered",
@@ -33,8 +34,8 @@ export const IcoBlack: Story = {
 
 export const IconRoundedBlue: Story = {
   args: {
-    icon: "round",
-    className: "text-z-blue w-40 h-40",
+    icon: "circle",
+    color: "blue",
   },
   parameters: {
     layout: "centered",
@@ -44,7 +45,7 @@ export const IconRoundedBlue: Story = {
 export const IconSquare: Story = {
   args: {
     icon: "square",
-    className: "text-z-yellow w-40 h-40",
+    color: "yellow",
   },
   parameters: {
     layout: "centered",

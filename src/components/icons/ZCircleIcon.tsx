@@ -1,6 +1,6 @@
 import type { SVGAttributes } from "react";
 
-const ZRoundedIcon = function ZRoundedIcon(props: SVGAttributes<SVGElement>) {
+const ZCircleIcon = function ZCircleIcon(props: SVGAttributes<SVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -35,4 +35,4 @@ const ZRoundedIcon = function ZRoundedIcon(props: SVGAttributes<SVGElement>) {
   );
 };
 
-export default ZRoundedIcon;
+export default ZCircleIcon;
