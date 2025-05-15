@@ -5,16 +5,40 @@ import { ZipIcon } from "./index";
 const meta = {
   title: "Components/ZipIcon",
   component: ZipIcon,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "ZIcon es un componente SVG que renderiza diferentes tipos de íconos empresariales (circle, square, line, plain_black, plain_white) con soporte para varios colores y tamaños.",
+      },
+    },
+  },
   tags: ["autodocs"],
 } satisfies Meta<typeof ZipIcon>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const IconRoundYellow: Story = {
+export const DefaultIcon: Story = {
   args: {
-    icon: "circle",
+    icon: "line",
     color: "yellow",
+    size: "md",
+  },
+  parameters: {
+    layout: "centered",
+  },
+};
+
+export const LineIcons: Story = {
+  render: (args) => (
+    <div className="flex flex-wrap gap-8">
+      <ZipIcon {...args} color="yellow" />
+      <ZipIcon {...args} color="blue" />
+    </div>
+  ),
+  args: {
+    icon: "line",
     size: "sm",
   },
   parameters: {
@@ -22,30 +46,98 @@ export const IconRoundYellow: Story = {
   },
 };
 
-export const IconBlack: Story = {
+export const FilledIcons: Story = {
+  render: (args) => (
+    <div className="flex flex-wrap gap-8">
+      <ZipIcon {...args} color="yellow" />
+      <ZipIcon {...args} color="blue" />
+      <ZipIcon {...args} color="black" />
+    </div>
+  ),
   args: {
-    icon: "circle",
-    color: "black",
+    icon: "filled",
+    size: "sm",
   },
   parameters: {
     layout: "centered",
   },
 };
 
-export const IconRoundedBlue: Story = {
+export const PlainBlackIcons: Story = {
+  render: (args) => (
+    <div className="flex flex-wrap gap-8">
+      <ZipIcon {...args} color="yellow" />
+      <ZipIcon {...args} color="blue" />
+      <ZipIcon {...args} color="black" />
+    </div>
+  ),
   args: {
-    icon: "circle",
-    color: "blue",
+    icon: "plain_black",
+    size: "xs",
   },
   parameters: {
     layout: "centered",
   },
 };
 
-export const IconSquare: Story = {
+export const PlainWhiteIcons: Story = {
+  render: (args) => (
+    <div className="flex flex-wrap gap-8">
+      <ZipIcon {...args} color="yellow" />
+      <ZipIcon {...args} color="blue" />
+      <ZipIcon {...args} color="black" />
+    </div>
+  ),
+  args: {
+    icon: "plain_white",
+    size: "xs",
+  },
+  parameters: {
+    layout: "centered",
+    backgrounds: {
+      default: "black",
+      values: [
+        { name: "black", value: "#666666" },
+        { name: "white", value: "#ffffff" },
+      ],
+    },
+  },
+};
+
+export const CircleIcons: Story = {
+  render: (args) => (
+    <div className="flex gap-2">
+      <ZipIcon {...args} color="yellow" />
+      <ZipIcon {...args} color="orange" />
+      <ZipIcon {...args} color="blue" />
+      <ZipIcon {...args} color="lightblue" />
+      <ZipIcon {...args} color="darkblue" />
+      <ZipIcon {...args} color="black" />
+    </div>
+  ),
+  args: {
+    icon: "circle",
+    size: "sm",
+  },
+  parameters: {
+    layout: "centered",
+  },
+};
+
+export const SquareIcons: Story = {
+  render: (args) => (
+    <div className="flex gap-3">
+      <ZipIcon {...args} color="yellow" />
+      <ZipIcon {...args} color="orange" />
+      <ZipIcon {...args} color="blue" />
+      <ZipIcon {...args} color="lightblue" />
+      <ZipIcon {...args} color="darkblue" />
+      <ZipIcon {...args} color="black" />
+    </div>
+  ),
   args: {
     icon: "square",
-    color: "yellow",
+    size: "sm",
   },
   parameters: {
     layout: "centered",
