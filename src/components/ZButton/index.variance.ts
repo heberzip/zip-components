@@ -6,10 +6,12 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-z-yellow text-white",
+        primary:
+          "bg-z-yellow text-white hover:bg-z-yellow-600 active:bg-z-yellow-800",
         secondary:
           "bg-z-darkblue text-white hover:bg-z-darkblue-600 active:bg-z-darkblue-800",
         destructive: "bg-red-500 text-white hover:bg-red-600",
+        styled: "linear-gradient-primary tracking-wider",
         outline: "border border-zinc-200 text-gray-800 hover:bg-zinc-100",
         ghost: "text-gray-800 hover:bg-zinc-100 hover:text-white",
         link: "underline underline-offset-4 text-zinc-900 hover:underline",
@@ -21,7 +23,7 @@ export const buttonVariants = cva(
       },
       style: {
         plain: "",
-        decorated: "tracking-wide",
+        decorated: "tracking-wider",
       },
     },
     defaultVariants: {

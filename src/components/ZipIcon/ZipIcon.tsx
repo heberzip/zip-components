@@ -1,5 +1,5 @@
 import { cn } from "../../utils/helpers";
-import { iconVariants, type ZIconProps } from "./index.variance";
+import { iconVariants, type ZipIconProps } from "./index.variance";
 
 import ZCircleIcon from "../icons/ZCircleIcon";
 import ZSquareIcon from "../icons/ZSquareIcon";
@@ -23,7 +23,7 @@ export const ZipIcon = ({
   size,
   className,
   ...props
-}: ZIconProps) => {
+}: ZipIconProps) => {
   const IconComponent = ICON_MAP[icon!];
   if (!IconComponent) return null;
 

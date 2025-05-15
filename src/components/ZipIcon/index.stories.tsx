@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { ZipIcon } from "./index";
+import type { ZipIconProps } from "./index.variance";
 
 const meta = {
   title: "Components/ZipIcon",
@@ -31,7 +32,7 @@ export const DefaultIcon: Story = {
 };
 
 export const LineIcons: Story = {
-  render: (args) => (
+  render: (args: ZipIconProps) => (
     <div className="flex flex-wrap gap-8">
       <ZipIcon {...args} color="yellow" />
       <ZipIcon {...args} color="blue" />
@@ -47,7 +48,7 @@ export const LineIcons: Story = {
 };
 
 export const FilledIcons: Story = {
-  render: (args) => (
+  render: (args: ZipIconProps) => (
     <div className="flex flex-wrap gap-8">
       <ZipIcon {...args} color="yellow" />
       <ZipIcon {...args} color="blue" />
@@ -64,7 +65,7 @@ export const FilledIcons: Story = {
 };
 
 export const PlainBlackIcons: Story = {
-  render: (args) => (
+  render: (args: ZipIconProps) => (
     <div className="flex flex-wrap gap-8">
       <ZipIcon {...args} color="yellow" />
       <ZipIcon {...args} color="blue" />
@@ -81,7 +82,7 @@ export const PlainBlackIcons: Story = {
 };
 
 export const PlainWhiteIcons: Story = {
-  render: (args) => (
+  render: (args: ZipIconProps) => (
     <div className="flex flex-wrap gap-8">
       <ZipIcon {...args} color="yellow" />
       <ZipIcon {...args} color="blue" />
@@ -105,7 +106,7 @@ export const PlainWhiteIcons: Story = {
 };
 
 export const CircleIcons: Story = {
-  render: (args) => (
+  render: (args: ZipIconProps) => (
     <div className="flex gap-2">
       <ZipIcon {...args} color="yellow" />
       <ZipIcon {...args} color="orange" />
@@ -125,7 +126,7 @@ export const CircleIcons: Story = {
 };
 
 export const SquareIcons: Story = {
-  render: (args) => (
+  render: (args: ZipIconProps) => (
     <div className="flex gap-3">
       <ZipIcon {...args} color="yellow" />
       <ZipIcon {...args} color="orange" />

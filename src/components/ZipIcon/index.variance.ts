@@ -43,5 +43,5 @@ export const iconVariants = cva("fill-current", {
   ],
 });
 
-export type ZIconProps = ComponentProps<"svg"> &
+export type ZipIconProps = ComponentProps<"svg"> &
   VariantProps<typeof iconVariants>;
