@@ -1,10 +1,22 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "src",
+          dest: ".",
+        },
+      ],
+    }),
+  ],
   build: {
     lib: {
       entry: "src/index.ts",
@@ -12,7 +24,7 @@ export default defineConfig({
       fileName: (format) => `zip-components.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "**/*.stories.tsx"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
